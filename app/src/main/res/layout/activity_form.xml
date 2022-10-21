@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_baseline_close_24"
+        android:background="#0000"
+        android:layout_gravity="top|start"
+        android:onClick="onCancelClick"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NFT"
+            android:textSize="22dp"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="12dp">
+        <TextView
+            android:id="@+id/nftid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="#id"
+            android:layout_gravity="center_horizontal"/>
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do seu NFT" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"/>
+
+        <EditText
+            android:id="@+id/edt_detalies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:hint="Detalhes do NFT"
+            android:gravity="top|start"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"/>
+
+        <EditText
+            android:id="@+id/edt_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:hint="Preço do NFT (R$)"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="12dp"/>
+        <Button
+            android:id="@+id/bt_salvar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salvar"
+            android:onClick="onSavaClick"/>
+
+    </LinearLayout>
+</LinearLayout>
