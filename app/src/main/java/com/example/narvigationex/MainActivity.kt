@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
     fun onEdtItemClick(view: View){
         if (selected < 0) return
-        var item:NFT =  nfts.get(itemsView.selectedItemPosition)
+        var item:NFT =  nfts.get(selected)
         var intent:Intent = Intent(this, FormActivity::class.java)
         intent.putExtra("index",selected)
         intent.putExtra("id", item.id)
